@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="./javascript/macrocalc.js"></script>
+        <title>Ang's Macro Counter</title>
+    </head>
+    <body>
+        <h1>My Macro Counter</h1>
+        
+        <h2>Daily Allowance:</h2>
+            <div id="dailyProtein" class="div1">
+                <form>
+                    <label>Protein:</Label>
+                        <input id="proteinInput" type="text" autofocus placeholder="Protein" oninput="fillProteinGoal(this)">
+                        
+                    <label>Protein Goal:</Label>
+                        <input id="proteinGoal" readonly>
+                        
+                    <label>Left:</label>
+                        <input id="proteinLeft">
+                        <br>
+                        <br>
+                </form>
+            </div>
+
+            <div id="dailyCarbs" class="div2">
+                <form>
+                    <label>Carbs:</label>     
+                        <input id="carbsInput" type="number" autofocus placeholder="Carbs" oninput="fillCarbsGoal(this)">
+                        
+                    <label>Carbs Goal:</label>
+                        <input id="carbGoal" readonly>
+
+                    <label>Left:</label>
+                        <input id="carbsLeft">
+                        <br>
+                        <br>
+                </form>
+            </div>      
+            
+            <div id="dailyFats" class="div3">
+                <form>
+                    <label>Fats:</label>
+                        <input id="fatsInput" type="number" autofocus placeholder="Fats" oninput="fillFatsGoal(this)">
+                    <label>Fats Goal:</label>
+                        <input id="fatsGoal" readonly>
+                    <label>Left:</label>
+                        <input id="fatsLeft">
+                    <br>
+                    <br>
+                </form>
+            </div>
+
+            <div id="totalCal" class="div4">
+                
+                    <p>Total Calories:</p>
+                        <p id="output">Output needs to go here:</p>  
+            </div>
+
+        <h2>Add Food:</h2>
+    <div id="food" class="form2">
+        <form>
+            <input type="number" autofocus placeholder="Protein"><br>
+            <input type="number" autofocus placeholder="Carbs"><br>
+            <input type="number" autofocus placeholder="Fats"><br>
+            <button>Enter</button>
+        </form>
+    </div>
+    </body>
+</html>
