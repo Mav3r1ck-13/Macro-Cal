@@ -16,10 +16,10 @@
                         <input id="proteinInput" type="text" autofocus placeholder="Protein" oninput="fillProteinGoal(this)">
                         
                     <label>Protein Goal:</Label>
-                        <input id="proteinGoal" readonly>
+                        <input id="proteinGoal" readonly tabindex="-1">
                         
                     <label>Left:</label>
-                        <input id="proteinLeft">
+                        <input id="proteinLeft" readonly tabindex="-1">
                         <br>
                         <br>
                 </form>
@@ -31,10 +31,10 @@
                         <input id="carbsInput" type="number" autofocus placeholder="Carbs" oninput="fillCarbsGoal(this)">
                         
                     <label>Carbs Goal:</label>
-                        <input id="carbGoal" readonly>
+                        <input id="carbGoal" readonly tabindex="-1">
 
                     <label>Left:</label>
-                        <input id="carbsLeft">
+                        <input id="carbsLeft" readonly tabindex="-1">
                         <br>
                         <br>
                 </form>
@@ -45,17 +45,17 @@
                     <label>Fats:</label>
                         <input id="fatsInput" type="number" autofocus placeholder="Fats" oninput="fillFatsGoal(this)">
                     <label>Fats Goal:</label>
-                        <input id="fatsGoal" readonly>
+                        <input id="fatsGoal" readonly tabindex="-1">
                     <label>Left:</label>
-                        <input id="fatsLeft">
+                        <input id="fatsLeft" readonly tabindex="-1">
                     <br>
                     <br>
                 </form>
             </div>
 
             <div id="totalCal" class="div4">
-                <p>Total Calories:</p>
-                    <input id="output" type="number" autofocus placeholder="Total Calories" onblur="totalCal(this)">
+                <label>Total Calories:</label>
+                    <input id="output" type="number" autofocus placeholder="Total Calories" onfocus="totalCal(this)">
             </div>
 
         <h2>Add Food:</h2>
@@ -64,7 +64,7 @@
             <input type="number" autofocus placeholder="Protein"><br>
             <input type="number" autofocus placeholder="Carbs"><br>
             <input type="number" autofocus placeholder="Fats"><br>
-            <button>Enter</button>
+            <!--<button>Enter</button> -->
         </form>
     </div>
     </body>
