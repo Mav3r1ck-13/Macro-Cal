@@ -21,7 +21,8 @@ function totalCal() {
     let c = document.getElementById("carbsInput").value;
     let f = document.getElementById("fatsInput").value;
     let calories = p * 4 + c * 4 + f * 9;
-    document.getElementById('output').value = parseInt(calories);
+    document.getElementById('output').value = calories;
+    
 }
-totalCal()
+
 
