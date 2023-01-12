@@ -25,4 +25,27 @@ function totalCal() {
     
 }
 
+//subtract entered food (protein) from totals and populate the Left field
+function subtractProtein () {
+    let pro = document.getElementById("proteinInput").value;
+    let proteinAdded = document.getElementById("proteinSubtract").value;
+    let subtracted = pro - proteinAdded;
+    document.getElementById("proteinLeft").value = subtracted;
+}
+
+//subtract entered food (carbs) from totals and populate the Left field
+function subtractCarbs () {
+    let car = document.getElementById("carbsInput").value;
+    let carbsAdded = document.getElementById("carbsSubtract").value;
+    let subtracted = car - carbsAdded;
+    document.getElementById("carbsLeft").value = subtracted;
+}
+
+//subtract entered food (fats) from totals and populate Left field
+function subtractFats () {
+    let fat = document.getElementById("fatsInput").value;
+    let fatsAdded = document.getElementById("fatsSubtract").value;
+    let subtracted = fat - fatsAdded;
+    document.getElementById("fatsLeft").value = subtracted;
+}
 

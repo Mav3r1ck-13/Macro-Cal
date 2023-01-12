@@ -61,10 +61,14 @@
         <h2>Add Food:</h2>
     <div id="food" class="form2">
         <form>
-            <input type="number" autofocus placeholder="Protein"><br>
-            <input type="number" autofocus placeholder="Carbs"><br>
-            <input type="number" autofocus placeholder="Fats"><br>
-            <!--<button>Enter</button> -->
+            <input id="foodName" type="text" autofocus placeholder="Food Name"><br>
+            <input id="proteinSubtract" type="number" autofocus placeholder="Protein" oninput="subtractProtein(this)"><br>
+            <input id="carbsSubtract" type="number" autofocus placeholder="Carbs" oninput="subtractCarbs(this)"><br>
+            <input id="fatsSubtract" type="number" autofocus placeholder="Fats" oninput="subtractFats(this)"><br>
+            <!--<button>Enter</button>
+            <button>Clear</button>-->
+
+            <textarea>Populate food here</textarea>
         </form>
     </div>
     </body>
