@@ -49,8 +49,9 @@ function subtractFats () {
 }
 
 //populate Added Food
-function food() {
-    let type = document.getElementById("foodName").value;
-    document.getElementById("textArea").value = type.value;
+function addFoodToTable () {
+    let table = document.getElementById("table");
+    let row = document.createElement("tr");
+    console.log(row);
 }
 
