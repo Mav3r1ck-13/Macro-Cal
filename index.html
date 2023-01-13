@@ -65,10 +65,16 @@
             <input id="proteinSubtract" type="number" autofocus placeholder="Protein" oninput="subtractProtein(this)"><br>
             <input id="carbsSubtract" type="number" autofocus placeholder="Carbs" oninput="subtractCarbs(this)"><br>
             <input id="fatsSubtract" type="number" autofocus placeholder="Fats" oninput="subtractFats(this)"><br>
-            <!--<button>Enter</button>
-            <button>Clear</button>-->
+            <input type="button" value="Add Food" onclick="addRow()" id="add"><br /><br />
 
-            <textarea>Populate food here</textarea>
+            <table id="table" class="foodTable">
+                <tr>
+                    <th>Food Name</th>
+                    <th>Protein</th>
+                    <th>Carbs</th>
+                    <th>Fats</th>
+                </tr>
+            </table>
         </form>
     </div>
     </body>

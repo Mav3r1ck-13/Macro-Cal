@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: steelblue;
+    color: rgb(19, 68, 109);
 }
 
 h1 {
@@ -9,4 +9,9 @@ h1 {
 
 pG {
     font-size: large;
+}
+
+.foodTable {
+    border-style: dashed;
+    border-color: lightgrey;
 }

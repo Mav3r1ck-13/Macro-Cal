@@ -21,8 +21,7 @@ function totalCal() {
     let c = document.getElementById("carbsInput").value;
     let f = document.getElementById("fatsInput").value;
     let calories = p * 4 + c * 4 + f * 9;
-    document.getElementById('output').value = calories;
-    
+    document.getElementById('output').value = calories;   
 }
 
 //subtract entered food (protein) from totals and populate the Left field
@@ -47,5 +46,11 @@ function subtractFats () {
     let fatsAdded = document.getElementById("fatsSubtract").value;
     let subtracted = fat - fatsAdded;
     document.getElementById("fatsLeft").value = subtracted;
+}
+
+//populate Added Food
+function food() {
+    let type = document.getElementById("foodName").value;
+    document.getElementById("textArea").value = type.value;
 }
 
