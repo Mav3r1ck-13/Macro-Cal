@@ -59,15 +59,16 @@
             </div>
 
         <h2>Add Food:</h2>
-    <div id="food" class="form2">
+    <div class="form2">
         <form>
             <input id="foodName" type="text" autofocus placeholder="Food Name"><br>
             <input id="proteinSubtract" type="number" autofocus placeholder="Protein" oninput="subtractProtein(this)"><br>
             <input id="carbsSubtract" type="number" autofocus placeholder="Carbs" oninput="subtractCarbs(this)"><br>
             <input id="fatsSubtract" type="number" autofocus placeholder="Fats" oninput="subtractFats(this)"><br>
+
             <input id="add" type="button" value="Add Food" onclick="addFoodToTable()"><br /><br />
 
-            <table id="table" class="foodTable">
+            <table id="table" class="foodTable" border="1">
                 <tr>
                     <th>Food Name</th>
                     <th>Protein</th>

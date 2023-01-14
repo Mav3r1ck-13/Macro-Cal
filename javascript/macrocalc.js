@@ -48,10 +48,27 @@ function subtractFats () {
     document.getElementById("fatsLeft").value = subtracted;
 }
 
-//populate Added Food
+//populate Added Food to table
 function addFoodToTable () {
+    "use strict";
     let table = document.getElementById("table");
-    let row = document.createElement("tr");
+    let row = document.createElement("tr");   
     console.log(row);
+    let food = document.createElement("td");
+    let trP = document.createElement("td");
+    let trC = document.createElement("td");
+    let trF = document.createElement("td");
+
+    food.innerHTML = document.getElementById("foodName").value;
+    trP.innerHTML = document.getElementById("proteinSubtract").value;
+    trC.innerHTML = document.getElementById("carbsSubtract").value;
+    trF.innerHTML = document.getElementById("fatsSubtract").value;
+
+    row.appendChild(food);
+    row.appendChild(trP);
+    row.appendChild(trC);
+    row.appendChild(trF);
+
+    table.children[0].appendChild(row);
 }
 

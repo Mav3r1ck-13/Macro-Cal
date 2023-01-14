@@ -14,4 +14,5 @@ pG {
 .foodTable {
     border-style: dashed;
     border-color: lightgrey;
+    text-align: center;
 }
